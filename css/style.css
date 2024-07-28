@@ -388,7 +388,7 @@
 }
 .company-brief{
     visibility: visible;
-    margin: 2rem 0.5rem 0rem 0.5rem;
+    margin:3rem 0.5rem 0rem 2rem !important;
     top: 30%;
     left:50%;
 }
@@ -400,9 +400,9 @@
     text-align: left;
     .company-brief{
         visibility: visible;
-        margin-left: 2rem;
-        top: 20%;
-        left:20% ;
+        margin:3rem 0.5rem 0rem 2rem !important ;
+        top: 30% !important;
+        left:30% !important;
     }
 
 }
@@ -442,7 +442,7 @@
 }
 .company-brief{
     visibility: visible;
-    margin: 2rem 0.5rem 0rem 0.5rem;
+    margin: 2rem 0.5rem 0rem 2rem;
     top: 30%;
     left:30%;
 }
@@ -453,8 +453,8 @@
     text-align: left;
     .company-brief{
         visibility: visible;
-        margin-left: 2rem;
-        top: 20%;
+        margin-left: 2rem 0.5rem 0rem 2rem;
+        top: 30%;
         left:30% ;
     }
 
