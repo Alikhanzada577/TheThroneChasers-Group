@@ -537,7 +537,7 @@
   #counter .item{
     /* background: #fff; */
     width: 15rem;
-    height: 15rem;
+    /* height: 15rem; */
     padding: 35px 40px;
     margin: 10px;
     text-align: center;
@@ -735,38 +735,139 @@
     flex-direction: row;
     height: fit-content;
     width: 100%;
-    .about-first{
+
+    .about-s{
         position: relative;
-        width:20% ;
-        height:100%;
-         overflow: hidden;
-        img{
+        width:20%;
+        overflow: hidden;
+         height: fit-content;
+        /* img{
+            width: 100%;
+            height: 700px;
+            object-fit: cover;
+        } */
+        video{
             width: 100%;
             height: 700px;
             object-fit: cover;
         }
+        .about-stext{
+            background: rgba(15, 15, 15, 0.6);
+            padding: 1rem;
+            color: white;
+            width: fit-content; 
+            height: fit-content;
+            position: absolute;
+            top: 65%;
+             
+        }
 
     }
-    .about-second{
+    .about-l{
         position: relative;
         width: 60%;
         height: 100%;
         overflow: hidden;
+        color: white;
         img{
             width: 100%;
             height: 700px;
             object-fit: cover;
         }
-    }
-    .about-third{
-        position: relative;
-        width: 20%;
-        height: 100%;
-        overflow: hidden;
-        img{
-            width: 100%;
+        
+        .about-mid{
+            
+            position: absolute; 
             height: 700px;
-            object-fit: cover;
+            top: 20%; 
+        .about-ltext{
+            background: rgba(15, 15, 15, 0.6);
+            align-items: center;
+            text-align: center;
+            width: fit-content;
+             height: fit-content; 
+            padding: 1rem;
+        }
+        .hexagon-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 50px; /* Adding some margin to see the hexagons clearly */
+          }
+          
+          .hexagon {
+            position: relative;
+            width: 200px; 
+            height: 115.47px; 
+            background-color: #64C7CC;
+            margin: 0 2rem;
+           h3{
+            text-align: center;
+           }
+          }
+          
+          .hexagon::before,
+          .hexagon::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+          }
+          
+          .hexagon::before {
+            bottom: 100%;
+            border-bottom: 57.74px solid #64C7CC;
+          }
+          
+          .hexagon::after {
+            top: 100%;
+            width: 0;
+            border-top: 57.74px solid #64C7CC;
+          }
+        
+    }
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .about-container{
+        display: flex;
+        flex-direction: column;
+        .about-s{
+            width: 100%;
+            height: 600px;
+            video{
+                width: 100%;
+                height: 600px;
+                object-fit: cover;
+            }
+            .about-stext{
+
+            }
+
+        }
+        .about-l{
+            width: 100%;
+            height: 63rem;
+            img{
+                height: 63rem;
+                object-fit: cover;
+            }
+            .about-mid{
+                top: 5%;
+            .about-ltext{
+
+            }
+            .hexagon-container {
+                height: 44rem;
+                margin-top: 2rem;
+            }
+            .hexagon{
+                margin: 0.5rem 2rem;
+            }
+        }
         }
     }
 }
